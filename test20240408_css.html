@@ -26,10 +26,29 @@
             border-color: darkseagreen;
             border-radius: 50px;
         }
+        a:visited{
+            color: aqua;
+        }
+        a:hover{
+            color:darkblue;
+        }
+        fieldset:hover{
+            background-color: blueviolet;
+        }
+        label:hover{
+            background-color: aquamarine;
+        }
+        #num2:hover{
+            background-color: rgb(255, 47, 0);
+        }
+        .odd:hover{
+            font-size: 500px;
+        }
     </style>
 </head>
 <body>
     <h1 >2023학년도 대학 수학 능력 평가</h1>
+    <h2><a href="https://www.google.co.kr">정답 및 해설지로 이동</a></h2>
     <h3>8~9. 다음 <보기>를 읽고 물음에 답하시오.</h3>
     <fieldset>
         <p>
@@ -50,12 +69,12 @@
     </fieldset>
     <h3>8. 윗글에 대한 내용으로 적절하지 <u>않은</u> 것은?</h3>
     <input type="radio" name="select" id="">
-    <label for="select">1번 보기입니다.</label><br>
+    <label for="select" class="odd">1번 보기입니다.</label><br>
     <input type="radio" name="select" id="">
-    <label for="select">2번 보기입니다.</label><br>
+    <label for="select" id="num2">2번 보기입니다.</label><br>
 
     <input type="radio" name="select" id="">
-    <label for="select">3번 보기입니다.</label>
+    <label for="select" class="odd">3번 보기입니다.</label>
     <br>
 
     <input type="radio" name="select" id="">
@@ -63,7 +82,7 @@
     <br>
 
     <input type="radio" name="select" id="">
-    <label for="select">5번 보기입니다.</label>
+    <label for="select" class="odd">5번 보기입니다.</label>
     <br>
     
 
